@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8437410127591890672}
   - component: {fileID: 5061329119016709020}
+  - component: {fileID: 2208428672895175764}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -92,3 +93,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2208428672895175764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658739237770897137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c492de190e7ee30449d3f53111e55bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletScript
+  speed: 10
+  lifetime: 3
