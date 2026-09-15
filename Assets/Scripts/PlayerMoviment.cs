@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMoviment : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float limiteX = 8f; // Valor da borda da tela. Ajustaremos no Unity.
 
     private Rigidbody2D rb;
     private float moveInput;
@@ -15,6 +16,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
+
+        // Trava a posição da nave no eixo X entre a borda esquerda e a borda direita
+        Vector3 posicaoAtual = transform.position;
+        posicaoAtual.x = Mathf.Clamp(posicaoAtual.x, -limiteX, limiteX);
+        transform.position = posicaoAtual;
     }
 
     void FixedUpdate()
