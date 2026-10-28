@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c52488ebe62abde47a9c98d47ed3c249
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 326914
+  packageName: Tiny Space Ships
+  packageVersion: 1.0
+  assetPath: Assets/Tiny Ships/Animations/Ship1_Idle.anim
+  uploadId: 776339

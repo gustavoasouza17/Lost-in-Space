@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 831751c992c6bd543a48ee26a4052fed
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 326914
+  packageName: Tiny Space Ships
+  packageVersion: 1.0
+  assetPath: Assets/Tiny Ships/Animations/Ship3_Move.anim
+  uploadId: 776339

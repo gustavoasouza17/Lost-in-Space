@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bb3688816fc37d1498c5d19c680cc86b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 326914
+  packageName: Tiny Space Ships
+  packageVersion: 1.0
+  assetPath: Assets/Tiny Ships/Animations/TinyShip10.controller
+  uploadId: 776339
