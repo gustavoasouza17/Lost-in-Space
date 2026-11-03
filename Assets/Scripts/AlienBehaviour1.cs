@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AlienBehaviour1 : MonoBehaviour
 {
-    [SerializeField] private float speed = 3f;
+    [SerializeField] private float speed = 1.5f;
     [SerializeField] private float limiteInferior = -6f; // Ajuste esse valor para o fundo da sua tela
 
     void Update()
@@ -13,6 +13,7 @@ public class AlienBehaviour1 : MonoBehaviour
         // Limpeza de memória: destrói o objeto se ele sair pela parte de baixo da câmera
         if (transform.position.y < limiteInferior)
         {
+            FindObjectOfType<UIManager>().AtivarGameOver();
             Destroy(gameObject);
         }
     }
