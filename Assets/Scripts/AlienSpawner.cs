@@ -3,8 +3,8 @@ using UnityEngine;
 public class AlienSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject alienPrefab; 
-    [SerializeField] public float tempoDeSpawn = 1.3f; // Tempo de surgimento entre cada alien
-    [SerializeField] private float limiteX = 8f; // Limite lateral da tela
+    [SerializeField] public float tempoDeSpawn = 1f; // Tempo de surgimento entre cada alien
+    [SerializeField] private float limiteX = 12f; // Limite lateral da tela
     [SerializeField] private float alturaDoSpawn = 6f; // ALliens irão nascer no topo da tela
 
     private float tempoDecorrido;

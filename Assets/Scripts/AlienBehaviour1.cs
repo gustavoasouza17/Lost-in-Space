@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AlienBehaviour1 : MonoBehaviour
 {
-    [SerializeField] private float speed = 1.5f;
+    [SerializeField] private float speed = 1f;
     [SerializeField] private float limiteInferior = -6f; // Ajuste esse valor para o fundo da sua tela
 
     void Update()
