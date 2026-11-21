@@ -3,12 +3,21 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
     [Header("Configurações de Disparo")]
-    public GameObject tiroPrefab; // O prefab do tiro que você acabou de criar
-    public Transform pontoDeDisparo; // O local exato de onde o tiro vai sair
+    public GameObject tiroPrefab;
+    public Transform pontoDeDisparo;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip somTiro;
+
+    void Start()
+    {
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+    }
 
     void Update()
     {
-        // Verifica se a barra de espaço foi pressionada
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Atirar();
@@ -17,7 +26,11 @@ public class PlayerShooting : MonoBehaviour
 
     void Atirar()
     {
-        // Cria o tiro na posição do pontoDeDisparo, com a rotação padrão
         Instantiate(tiroPrefab, pontoDeDisparo.position, Quaternion.identity);
+
+        if (audioSource != null && somTiro != null)
+        {
+            audioSource.PlayOneShot(somTiro);
+        }
     }
 }
